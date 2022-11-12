@@ -1,8 +1,32 @@
 <!-- Aqui vamos a indicar el llamado de la Herencia de base.html -->
 {% extends 'core/base.html' %}
 
-{% block content %}
-<h2>Contactanos</h2>
+{% block title %}Contactanos{% endblock %}
 
-<p>Vladimir Mate | vladimir.mate@gmail.com | &copy; 2022</p>
+{% block backgroud %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-8 col-md-10 mx-auto">
+     <p>
+          Puedes contactarme en los siguiente medios
+     </p>
+
+     <br>
+
+     <p>
+          <b>Teléfono:</b> +503 7840 1939
+     </p>
+
+     <p>
+          <b>Correo Electronico:</b> vladimir.mate@gmail.com
+     </p>
+     <p>
+          <b>Facebook:</b> <a href="https://www.facebook.com/matevladimir77" target="_blank"> facebook.com/matevladimir77 </a>
+     </p>
+</div>
 {% endblock %}

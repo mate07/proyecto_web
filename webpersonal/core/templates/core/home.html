@@ -1,8 +1,11 @@
 <!-- Aqui vamos a indicar el llamado de la Herencia de base.html -->
 {% extends 'core/base.html' %}
 
-{% block content %}
-<h2>Portada</h2>
+{% block title %}Portada{% endblock %}
 
-<p>Bienvenidos, Programación Orientada a Objetos</p>
+{% block backgroud %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>Vladimir Mate</h1>
+<span class="subheading">Ingeniero en Ciencias de la Computación</span>
 {% endblock %}
